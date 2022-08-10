@@ -1,0 +1,28 @@
+from tokenize import String
+
+class My_class():
+    def remove_a_char(self):
+        string = 'hello, my name is sura!'
+        new_string = string.replace('s', '')
+        print(new_string)
+    def Prime(self):
+        a = 0
+        b = 100
+        
+        print("Prime numbers between", a, "and", b, "are:")
+        for num in range(a, b + 1):
+            if num > 1:
+                for i in range(2, num):
+                    if (num % i) == 0:
+                        break
+                else:
+                    print(num)
+                    
+    def char_caunt(self):
+        string= "Sura Rafe Attallah"
+        print('The number of the char in this string is:',string.count("a"))
+                
+obj = My_class()
+obj.remove_a_char()
+obj.Prime()
+obj.char_caunt()
